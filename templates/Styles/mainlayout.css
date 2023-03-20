@@ -1,15 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
 body {
     background-image: url(CSSImages/Home/bg.png);
     background-repeat: no-repeat;
-    background-size: auto 80%;
+    background-size: auto 22%;
 }
 
-.h1, h1 {
+.h1, h1, h3, .h3 {
     font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.25;
     margin: 0;
     padding: 0;
+    font-family: GeosansLight;
+    font-weight: bold;
 }
 
 p {
@@ -18,6 +28,7 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    font-family: GeosansLight;
 }
 
 /* Styling the main text */
@@ -95,6 +106,53 @@ p {
     z-index: 3;
 }
 
+.ad_title {
+    text-align: center;
+}
+
+.ad_content {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.ad_columnleft h3 {
+    text-align: center;
+    display: block;
+}
+
+.ad_columnleft p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #646c78;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+    
+.ad_columnright h3 {
+    text-align: center;
+    position: relative;
+}
+
+.ad_columnright p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #646c78;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.8;
+} 
+
 /* Styling the nav bar */
 ul {
   list-style-type: none;
@@ -109,7 +167,7 @@ ul {
 
 .box {
   float: left;
-  width: 15%;
+  width: 20%;
   padding: 10px 0;
   background-color: none;
   text-align: center;
@@ -118,13 +176,13 @@ ul {
 
 #login {
     float: right;
+    padding-left: 30px;
 }
 
 .cbox {
   float: left;
   width: 20%;
   padding: 30px 0;
-  margin-right: 242px;
   background-color: none;
   text-align: center;
 
@@ -148,8 +206,8 @@ li.menu a, .dropbtn {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: Charmie;
-  font-size: 40px;
+  font-family: GeosansLight;
+  font-size: 30px;
 }
 
 li.menu a:hover, .dropdown:hover, li.dropdown:hover, .dropbtn {
@@ -162,15 +220,15 @@ li.dropdown {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: Charmie;
-  font-size: 40px;
+  font-family: GeosansLight;
+  font-size: 30px;
 }
 
 .linkdrop {
     text-decoration: none;
     color: black;
-    font-family: Charmie;
-    font-size: 40px;
+    font-family: GeosansLight;
+    font-size: 30px;
 }
 
 
@@ -206,14 +264,45 @@ li.menu a.active {
 }
 
 /* Styling the footer */
+.footer_content {
+    text-align: center;
+    font-family: GeosansLight;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login_buttonfooter {
+    background: #fff;
+    border-color: #fff;
+    color: #40D4A8;
+    font-size: 1.8rem;
+    padding: 1.8rem 4.6rem 1.8rem;
+    border-radius: 3.2rem;
+    line-height: 1;
+    cursor: pointer;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+
+.login_buttonfooter:hover {
+    opacity: 50%;
+}
+
+#copyright{
+    position:absolute;
+    color:#000;
+    bottom:1px;
+    left: 47%;
+}
+
 footer {
     width: 100%;
-    height: 100px;
-    bottom: 0;
-    left: 0;
-    margin-top: auto;
-    text-align: center;
-    background-image: url("../decor/dotted.jpg");
-    font-family: Charmie;
-    font-size: 32px;
+    height: 800px;
+    background-image: url(CSSImages/Home/footerbanner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
