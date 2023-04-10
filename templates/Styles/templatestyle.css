@@ -1,0 +1,323 @@
+body {
+    background-image: url(CSSImages/Home/bg.png);
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+}
+
+.h1, h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+    font-family: GeosansLight;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: GeosansLight;
+}
+
+/* Styling the main text */
+.grid_row {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    min-height: 0.1rem;
+    padding-top: 2rem;
+    padding-left: 5rem;
+}
+
+.subtitle {
+    display: block;
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 768px)
+.paragraph {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    max-width: 46.1rem;
+}
+
+.paragraph {
+    color: #646c78;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-top: 2.5rem;
+}
+
+.contentform_container {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.content_button {
+    background: #40D4A8;
+    border-color: #40D4A8;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1rem 4rem 1rem;
+    border-radius: 3.2rem;
+    line-height: 1;
+    cursor: pointer;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+
+.content_button:hover {
+    background-color: #63E0CC;
+    color: darkslategrey;
+}
+
+/* Styling the hero image */
+@media only screen and (min-width: 768px)
+.grid_columncontent {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.image_wrapper {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.image_wrapper img {
+    box-shadow: 2px 2px 10px 5px turquoise;
+}
+
+.grid_columncontent img {
+    max-height: 25.8rem;
+    max-width: 26rem;
+    position: relative;
+    z-index: 3;
+}
+
+/* Styling the nav bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 20%;
+  padding: 10px 0;
+  background-color: none;
+  text-align: center;
+
+}
+
+#login {
+    float: right;
+    padding-left: 30px;
+}
+
+.cbox {
+  float: left;
+  width: 20%;
+  background-color: none;
+  text-align: center;
+
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Styling the nav dropdown */
+li.menu {
+    list-style-type: none;
+}
+
+li.menu a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: GeosansLight;
+  font-size: 30px;
+}
+
+li.menu a:hover, .dropdown:hover, li.dropdown:hover, .dropbtn {
+  text-decoration: underline; 
+}
+
+li.dropdown {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: GeosansLight;
+  font-size: 30px;
+}
+
+.linkdrop {
+    text-decoration: none;
+    color: black;
+    font-family: GeosansLight;
+    font-size: 30px;
+}
+
+
+/* Styling the nav links */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;    
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;   
+}
+
+/* Active/Current nav link */
+li.menu a.active {
+    text-decoration: underline;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Resume Template Columns */
+.column {
+  float: left;
+  width: 35%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Subtitle */
+.subtitle {
+    text-align: center;
+    color: white;
+    font-family: GeosansLight;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+/* Image Gallery */
+img.demo {
+  opacity: 0.6;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.active, .demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Styling the footer */
+footer {
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    margin-top: auto;
+    text-align: center;
+    font-family: GeosansLight;
+    font-size: 32px;
+}
