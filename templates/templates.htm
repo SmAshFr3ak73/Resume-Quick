@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Styles/templatestyle.css" rel="stylesheet" type="text/css">
+<title>Quick Online Student Resume Builder</title>
+</head>
+<body>
+<header>
+<!-- Navbar -->
+<div class="clearfix">
+<div class="cbox">
+    <a class="active" href="home.htm"><img src="Images/Home/logo.png"></a>
+</div>
+    <div class="box">
+        <li class="dropdown">
+            <a class="linkdrop" href="resumeTemplates.htm">Resume Templates</a>
+                <div class="dropdown-content">
+                    <a href="systemAdmin.htm">System Administration</a>
+                    <a href="interRelations.htm">Information Security Analyst</a>
+                </div>
+        </li>
+    </div>
+    <div class="box">
+        <li class="menu"><a href="about.htm">About Us</a></li>
+    </div>
+    <div class="box">
+        <li class="menu"><a href="contact.htm">Contact</a></li>
+    </div>
+    
+    <div class="box" id="login">
+        <li class="menu"><a href="login.htm">Log In</a></li>
+    </div>
+</div>
+</header>
+    
+<!--Main Content -->
+<div class="grid_row">
+    <div class="grid_columncontent">
+        <h1 class="title">Choose which template you want to get started</h1>
+    </div>
+    <div class="grid_columnimage">
+<div class="row">
+  <div class="column">
+    <img src="Images/Template/Resume.png" onclick="openModal();currentSlide(1)" class="hover-shadow" style="max-width: 500px; height: 500px">
+  </div>
+  <div class="column">
+    <img src="Images/Template/Resume2.png" onclick="openModal();currentSlide(2)" class="hover-shadow" style="max-width: 500px; height: 500px">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <div class="subtitle"><h3>Click on Image to Proceed to Login</h3></div>
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <a href="login.htm"><img src="Images/Template/Resume.png" style="width:100%"></a>
+    </div>
+    <div class="mySlides">
+        <a href="login.htm"><img src="Images/Template/Resume2.png" style="width:100%"></a>
+    </div>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="Images/Template/Resume.png" onclick="currentSlide(1)" alt="Default Template: System Administrator">
+    </div>
+    <div class="column">
+      <img class="demo" src="Images/Template/Resume2.png" onclick="currentSlide(2)" alt="Template: Information Security Analyst">
+    </div>
+  </div>
+</div>
+    </div>
+</div>
+    <footer>
+    </footer>
+    <script type="text/javascript" src="Javascript/templatePreview.js"></script>
+  </body>
+</html>
+
