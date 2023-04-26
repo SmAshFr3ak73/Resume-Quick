@@ -1,0 +1,60 @@
+<head>   
+    <!-- Created a title for the page, and linked the css file-->
+    <title>Login And Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Here is the first format for the login and registration boxes, also added the "onclick button to make it clickable"-->
+<body>
+    <div class="one">
+<div class="form-box">
+    <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+    </div>
+
+    <!-- Here is the login form elements with their respective input types-->
+    <form id="login" class="input-group">
+        <input type="text" class="input-field" placeholder="Username" required>
+        <input type="password" class="input-field" placeholder="Password" required>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button type="submit" class="submit-btn"> Log in</button>
+    </form>
+
+    <!-- Here is the registration form elements with their respective input types-->
+    <form id="register" class="input-group">
+        <input type="text" class="input-field" placeholder="Full Name" required>
+        <input type="text" class="input-field" placeholder="Username" required>
+        <input type="password" class="input-field" placeholder="Password" required>
+        <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+        <button type="submit" class="submit-btn"> Register</button>
+    </form>
+</div>
+     
+    </div>
+    <!-- This script helps aligns both the login and registration form so when users click on their respective forms. 
+        There is one function for each form with the correct calculation to make the forms side by side. One for the login portion,
+        one for the registration portion, and one for the buttons portions.-->
+    <script>
+        var a = document.getElementById("login");
+        var b = document.getElementById("register");
+        var c = document.getElementById("btn");
+
+        function register(){
+            a.style.left = "-400px";
+            b.style.left = "50px";
+            c.style.left = "110px";
+        }
+
+        function login(){
+            a.style.left = "50px";
+            b.style.left = "450px";
+            c.style.left = "0px";
+        }
+
+    </script>
+       
+</body>
+</html>
+
