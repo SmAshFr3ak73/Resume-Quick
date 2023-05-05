@@ -344,6 +344,38 @@ img.hover-shadow {
     left: 47%;
 }
 
+.separator {
+    border-left: 2px solid #646c78;
+    height: 200px;
+    float: right;
+}
+
+.contact {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding-top: 4px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 50px;
+    border: 5px solid white;
+    font-weight: bold;
+    font-size: 1.5rem;
+} 
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.separator img {
+    padding-left: 1rem;
+}
+
 footer {
     width: 100%;
     height: 800px;
